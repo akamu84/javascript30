@@ -17,6 +17,7 @@
     "no-plusplus": "off",
     "no-shadow": "off",
     "no-return-assign": "off",
+    "prefer-rest-params": "off",
     "prettier/prettier": [
       "error",
       {
