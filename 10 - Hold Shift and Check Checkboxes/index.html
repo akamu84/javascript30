@@ -34,7 +34,7 @@
         text-decoration: line-through;
       }
 
-      input[type='checkbox'] {
+      input[type="checkbox"] {
         margin: 20px;
       }
 
@@ -43,7 +43,7 @@
         padding: 20px;
         transition: background 0.2s;
         flex: 1;
-        font-family: 'helvetica neue';
+        font-family: "helvetica neue";
         font-size: 20px;
         font-weight: 200;
         border-left: 1px solid #d1e2ff;
@@ -94,35 +94,6 @@
       </div>
     </div>
 
-    <script>
-      const checkboxes = document.querySelectorAll('.inbox input[type="checkbox"]');
-
-      let lastChecked;
-
-      function handleCheck(e) {
-        // Check if they had the shift key down
-        // AND check that they are checking it
-        let inBetween = false;
-        if (e.shiftKey && this.checked) {
-          // go ahead and do what we please
-          // loop over every single checkbox
-          checkboxes.forEach(checkbox => {
-            console.log(checkbox);
-            if (checkbox === this || checkbox === lastChecked) {
-              inBetween = !inBetween;
-              console.log('Starting to check them in between!');
-            }
-
-            if (inBetween) {
-              checkbox.checked = true;
-            }
-          });
-        }
-
-        lastChecked = this;
-      }
-
-      checkboxes.forEach(checkbox => checkbox.addEventListener('click', handleCheck));
-    </script>
+    <script src="scripts.js"></script>
   </body>
 </html>

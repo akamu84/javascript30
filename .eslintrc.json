@@ -12,12 +12,19 @@
     "ecmaVersion": 2018
   },
   "rules": {
-    "prettier/prettier": ["error"],
     "no-console": "off",
     "no-param-reassign": "off",
     "no-plusplus": "off",
     "no-shadow": "off",
-    "no-return-assign": "off"
+    "no-return-assign": "off",
+    "prettier/prettier": [
+      "error",
+      {
+        "trailingComma": "es5",
+        "singleQuote": true,
+        "printWidth": 120
+      }
+    ]
   },
   "plugins": ["prettier"]
 }
